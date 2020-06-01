@@ -1,7 +1,9 @@
 /* Strat Main Rules */
 body{
-    background-color: #888;
+    background-color: #FFF;
+    height:4000px;
 }
+.clearfix{clear: both;}
 
 .container{
     width:1170px;
@@ -10,6 +12,10 @@ body{
 /* End Main Rules */
 
 /* Start Header Rules */
+
+.header .slider{
+    height:500px;
+}
 
 .header .navbar{
     background-color: #252f31;
@@ -37,3 +43,84 @@ body{
     padding:10px; 
  }
 /* End Header Rules */
+/* Start Featres Rules */
+.featres{
+    overflow: hidden;
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+.featres .feat{
+    float:left;
+    background-color: cadetblue; /*for testing*/
+    width:33.33%;
+    height:150px;
+
+}
+/* End Featres Rules */
+
+/* Start About Me */
+.about-me{
+    overflow: hidden;
+    background-color: cyan;
+}
+.my-image{
+    width:40%;
+    float: left;
+}
+.my-image img{width:100%}
+.about-me .my-info{
+    float:left;
+    width: 60%;
+    overflow: hidden; 
+}
+
+.about-me .my-info .my-hobbies > div{
+    float: left;
+    width: 50%;
+    min-height: 70px;
+}
+
+
+/* End About Me */
+/* Start My Skills */
+.my-skills{
+    padding-top:30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+.my-skills .skills,
+.my-skills .progress{
+    float: left;
+    width:50%;
+
+}
+/* End My Skills */
+/* Start My Resume */
+    .my-resume{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        background-color: darkgrey;
+    }
+/* End My Resume */
+/* Start My Education */
+.my-education{
+    padding-top:30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+.my-education .main,
+.my-education  .experience{
+    float: left;
+    width:50%;
+
+}
+/* End My Education */
+/* Start Testimonils */
+.testimonials{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: darkgrey;
+}
+/* End Testimonils */
