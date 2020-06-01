@@ -1,0 +1,39 @@
+/* Strat Main Rules */
+body{
+    background-color: #888;
+}
+
+.container{
+    width:1170px;
+    margin: auto;
+}
+/* End Main Rules */
+
+/* Start Header Rules */
+
+.header .navbar{
+    background-color: #252f31;
+    color:#FFF;
+    overflow: hidden;
+    
+}
+
+.header .navbar h2{
+    float:left;
+    text-transform: uppercase;
+}
+.header .navbar h2 span{
+    color:#009c91
+} 
+ .header .navbar ul{
+    list-style: none;
+    padding-left:0px;
+    float: right;
+    overflow: hidden;
+    
+}
+ .header .navbar ul li{
+    float:left;
+    padding:10px; 
+ }
+/* End Header Rules */
