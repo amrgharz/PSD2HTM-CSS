@@ -1,7 +1,6 @@
 /* Strat Main Rules */
 body{
     background-color: #FFF;
-    height:4000px;
 }
 .clearfix{clear: both;}
 
@@ -12,9 +11,29 @@ body{
 /* End Main Rules */
 
 /* Start Header Rules */
-
 .header .slider{
-    height:500px;
+    background-image: url("https://insights.pecb.com/wp-content/uploads/2019/05/hologram-technology--1170x600.jpg");
+    height:600px;
+}
+.header .slider .intro{
+    text-align:center;
+    padding-top: 200px;
+}
+.header .slider h2{
+    margin: 0px auto;
+color: #FFF;
+font-size: 60px;
+width: 600px;
+border-bottom: solid 4px #FFF;
+border-top: solid 4px #FFF;
+padding: 5px 0px;
+}
+.header .slider button{
+    background: none;
+    margin-top: 30px;
+    padding: 10px 30px;
+    border: solid 3px #FFF;
+    color: #FFF;
 }
 
 .header .navbar{
@@ -41,6 +60,15 @@ body{
  .header .navbar ul li{
     float:left;
     padding:10px; 
+ }
+ .header .navbar ul li a{
+    background-color: transparent;
+    color: #FFF;
+    text-decoration: none;
+ }
+ .header .navbar ul li a:hover,
+ .header .navbar ul li.active a{
+    color:#009c91
  }
 /* End Header Rules */
 /* Start Featres Rules */
@@ -124,3 +152,46 @@ body{
     background-color: darkgrey;
 }
 /* End Testimonils */
+/* Start Portfolio */
+.portfolio{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.portfolio .our-work{
+    overflow: hidden;
+}
+.portfolio .our-work > div{
+    float:left;
+    width:33.33%;
+    margin-bottom: 15px;
+}
+.portfolio .our-work > div img{
+    width:95%;
+}
+/* End Portfolio */
+/* Start Contact */
+.contact{
+    background-color:#252f31;
+    overflow: hidden;
+}
+.contact h3{
+    color:#FFF
+}
+.contact p{
+    color:#6A6E71
+}
+.contact .info,
+.contact .form{
+    width:50%;
+    float:left;
+}
+/* End Contact */
+/* Start Footer */
+.footer{
+    text-align: center;
+    background-color: #191E22;
+    color:#6A6E71;
+    padding:30px;
+}
+/* End Footer */
