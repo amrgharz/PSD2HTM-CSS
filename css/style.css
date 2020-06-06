@@ -8,12 +8,17 @@ body{
     width:1170px;
     margin: auto;
 }
+h2,h3{
+    color:#444
+}
 /* End Main Rules */
 
 /* Start Header Rules */
 .header .slider{
     background-image: url("https://insights.pecb.com/wp-content/uploads/2019/05/hologram-technology--1170x600.jpg");
     height:600px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .header .slider .intro{
     text-align:center;
@@ -45,7 +50,6 @@ padding: 5px 0px;
 
 .header .navbar h2{
     float:left;
-    text-transform: uppercase;
 }
 .header .navbar h2 span{
     color:#009c91
@@ -79,9 +83,15 @@ padding: 5px 0px;
 }
 .featres .feat{
     float:left;
-    background-color: cadetblue; /*for testing*/
     width:33.33%;
     height:150px;
+    color:#666;
+}
+.featres .feat h2{
+    color:#444
+}
+.featres .feat p{
+    padding:0 20px 0 0;
 
 }
 /* End Featres Rules */
@@ -89,23 +99,59 @@ padding: 5px 0px;
 /* Start About Me */
 .about-me{
     overflow: hidden;
-    background-color: cyan;
+    background-color: #DDD;
 }
 .my-image{
     width:40%;
     float: left;
 }
-.my-image img{width:100%}
+.my-image img{width: 100%; }
 .about-me .my-info{
     float:left;
     width: 60%;
     overflow: hidden; 
 }
 
-.about-me .my-info .my-hobbies > div{
+.about-me .my-info h2{
+    padding:0px  40px;
+    margin-top:10px;
+    margin-bottom: 0;
+}
+
+.about-me .my-info > p{
+    padding: 0px 40px;
+    margin-bottom: 0;
+}
+.about-me .my-info p{
+line-height: 1.3;
+color:#666
+}
+/* .about-me .my-info p:first-of-type{
+    padding-top: 30px;
+    line-height: 1.7;
+    color:#666
+}*/
+.about-me .my-info .my-hobbies{
+    padding-left: 40px;
+    overflow:hidden;
+}
+.about-me .my-info .my-hobbies .content{
     float: left;
     width: 50%;
-    min-height: 70px;
+    min-height: 100%;
+}
+.about-me .my-info .my-hobbies .content .icon{
+    float:left;
+    width:12%;
+    margin-right: 2%;
+}
+.about-me .my-info .my-hobbies .content .icon img{
+    max-width: 100%;
+    margin-top: 20px;;
+}
+.about-me .my-info .my-hobbies .content .text{
+    width:86%;
+    float:left;
 }
 
 
@@ -116,11 +162,34 @@ padding: 5px 0px;
     padding-bottom: 30px;
     overflow: hidden;
 }
+.my-skills .skills button{
+    width: 110px;
+    height: 40px;
+    border: solid #009C91 3px;
+    background: none;
+    color:#009C91;
+}
 .my-skills .skills,
 .my-skills .progress{
     float: left;
-    width:50%;
-
+    width: 45%;
+    margin-right: 5%;
+}
+.my-skills h2{
+ color:#444
+}
+.my-skills .progress .tech{
+    background-color: lightgrey;
+    height:25px
+}
+.my-skills .progress span{
+    background-color:#009C91;
+    display: block;
+    height:25px;
+    line-height: 25px;;
+    text-align:right;
+    color:white;
+    font-weight: bold;
 }
 /* End My Skills */
 /* Start My Resume */
@@ -128,7 +197,17 @@ padding: 5px 0px;
         padding-top: 30px;
         padding-bottom: 30px;
         text-align: center;
-        background-color: darkgrey;
+        background-color: #DDD;
+    }
+    .my-resume p{
+        color:#666;
+    }
+    .download-resume{
+        height: 40px;
+        border: solid #009C91 3px;
+        background: none;
+        color:#009C91;
+        margin: 20px 0px;
     }
 /* End My Resume */
 /* Start My Education */
@@ -137,19 +216,89 @@ padding: 5px 0px;
     padding-bottom: 30px;
     overflow: hidden;
 }
-.my-education .main,
-.my-education  .experience{
+.my-education .main{
     float: left;
     width:50%;
-
+  
+}
+.my-education  .experience{
+    float: left;
+    width:45%;
+    margin-left:5%;
+}
+.my-education p{
+    line-height: 1.3;
+    color:#666
+}
+.my-education .experience h3{
+    margin: 62px 0px 5px 0px;
+}
+.my-education .experience span{
+    display:block;
+}
+.my-education .experience .codi span:first-of-type{
+    color:#888;
+    margin-bottom: 4px;
+}
+.my-education .experience .codi span:last-of-type{
+    margin-top:5px;
+    background-color: #009C91;
+    color:#FFF;
+    display:inline-block;
+    padding:4px 2px;
+    border-radius: 4px;
+}
+.my-education .experience .codi hr{
+        margin: 20px 0px;
+        border: solid #999 2px;
+}
+.my-education .experience .damascus span:first-of-type{
+    color:#888;
+    margin-bottom: 4px;
+}
+.my-education .experience .damascus span:last-of-type{
+    margin-top:5px;
+    background-color: #009C91;
+    color:#FFF;
+    display:inline-block;
+    padding:4px 2px;
+    border-radius: 4px;
+}
+.my-education .experience .damascus hr{
+        margin: 20px 0px;
+        border: solid #999 2px;
 }
 /* End My Education */
 /* Start Testimonils */
 .testimonials{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
-    background-color: darkgrey;
+    background-color: #DDD;
+}
+.testimonials q{
+    color: #666;
+    
+} 
+.testimonials ul{
+    list-style: none;
+    padding-left:0px;
+}
+.testimonials ul li{
+    background-color: transparent;
+    border:2px solid #009C91 ;
+    width:15px;
+    height:15px;
+    display: inline-block;
+    border-radius: 14px;
+    margin:20px 0px;
+    padding-bottom: 0px;
+}
+.testimonials ul li:hover{
+ cursor: pointer;
+}
+.testimonials ul li.active{
+    background-color:#009C91 ;
 }
 /* End Testimonils */
 /* Start Portfolio */
@@ -157,6 +306,10 @@ padding: 5px 0px;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+}
+.portfolio p{
+    color:#666;
+    margin-bottom: 30px;
 }
 .portfolio .our-work{
     overflow: hidden;
@@ -176,15 +329,48 @@ padding: 5px 0px;
     overflow: hidden;
 }
 .contact h3{
-    color:#FFF
+    color:#DDD
 }
 .contact p{
-    color:#6A6E71
+    color:#888
 }
-.contact .info,
-.contact .form{
+.contact .info{
     width:50%;
+    float:left;  
+    padding-right: 5%;
+}
+.contact .form{
+    width:45%;
     float:left;
+}
+.contact .form label {
+	display: block;
+	color: #888;
+	margin: 20px 0 10px;
+}
+.contact .form input[type="text"]{
+    width: 100%;
+    height: 35px;
+    border-radius: 18px;
+    background-color: #DDD;
+    border:none;
+}
+.contact .form textarea{
+    width: 100%;
+    height: 35px;
+    border-radius: 18px;
+    background-color: #DDD;
+    border:none;
+    height: 300px;
+}
+.contact .form input[type="submit"]{
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0px;
+    height: 40px;
+    width: 120px;
+    background-color: #555;
+    color: #EEE;
 }
 /* End Contact */
 /* Start Footer */
